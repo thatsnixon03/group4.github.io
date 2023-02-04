@@ -21,7 +21,7 @@ body{
 
 }
 .blur{
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(60px);
 }
 .right{
     padding: 12em 7em;
