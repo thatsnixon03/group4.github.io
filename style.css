@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'debra';
+    src: url('font/FontsFree-Net-Montserrat-ExtraBold.ttf');
+}
+ input{
+    margin: .2em;
+    border-radius: 20px;
+    padding: .3em;
+ }
+ .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:11%;
+ }
+ .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  padding: 5%;
+  background-color: antiquewhite;
+  border-radius: 20px;
+ }
+ .button{
+    border: none;
+    background-color: rgb(247, 212, 165);
+    font-size: .78em;
+    padding: .6em;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+   
+ }
+ .button:hover{
+
+    background-color: rgb(252, 195, 121);
+    cursor: pointer;
+    letter-spacing: .1em;
+ }

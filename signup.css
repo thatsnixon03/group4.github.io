@@ -1,0 +1,54 @@
+body{
+    font-family: 'montserrat';
+    color: aliceblue;
+
+    background-color:#24272f;
+}
+.yellow{
+      background-color: #f6973ebc;
+    }
+    .button{
+      font-family: 'montserrat';
+      padding: .5em;
+      border-radius: 20px;
+      background-color: #ffdcbce1;
+      border: none;
+      transition: all 1s;
+  
+  }
+  .button:hover{
+      cursor: pointer;
+      background-color: #ffdcbc7f;
+      color: whitesmoke;
+      letter-spacing: .3em;
+  
+  
+  }
+  .dark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    background-color: #24272f29;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    
+  }
+  .bg{
+    background-image: url('Resource/Gradient.gif');
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  [data-scroll="in"]{
+    transform: translateX(0);
+    opacity: 1;
+   }
+[data-scroll="out"]{
+    transform: translateX(-100%);
+    opacity: 0;
+    filter: blur(20px);
+}

@@ -1,0 +1,25 @@
+body{
+    font-family: 'montserrat';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background-color:#24272f;
+}
+.button{
+    font-family: 'montserrat';
+    padding: .5em;
+    border-radius: 20px;
+    background-color: #ffdcbce1;
+    border: none;
+    transition: all 1s;
+
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #ffdcbc7f;
+    color: whitesmoke;
+    letter-spacing: .3em;
+
+
+}
