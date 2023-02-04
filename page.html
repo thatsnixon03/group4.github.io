@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewprt" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page.css">
+
+</head>
+<body>
+    <div class="box">
+        <div class="content">
+            <div data-scroll class="text">
+                <h1 id="intro"></h1>
+            </div>
+         <br>
+            <script>
+                if(localStorage.getItem("input")){
+                    let username=localStorage.getItem("input");
+                    document.getElementById("intro").innerHTML=`hello , ${username} `;
+                }
+            </script>
+                <h2 data-scroll>
+                    welcome to our <span style="color:  #fda24ce1;">digital art gallery</span>
+                </h2>
+                <p>
+                    scroll  to get latest digital art from  Group4 members . . . . .
+                </p>
+            
+        </div>
+    </div>
+         <div class="outside">
+            <ul>
+                <li><h1 data-scroll class="tl">THE</h1></li>
+                <li><h1  data-scroll class="tl">GALLERY</h1></li>
+                <li><p  data-scroll class="nb">  hover on items for detailed view</p></li>
+            </ul>
+            <div class="all">
+                <div class="holder" data-scroll>
+    
+                        <img class= "image" src="Resource\Purple.jpg" alt="">
+                        <div class="footer">
+                            <h1>Created by <i>Nixon Henry</i></h1>
+                        <p>it shows devotion and emptyness of the soul</p>
+                        </div>
+
+                
+    
+                </div>
+    
+                <div class="holder" data-scroll>
+                        <img class= "image" src="Resource\Greek.gif" alt="">
+                        <div class="footer">
+                            <h1>Created by <i>Evance Franco</i></h1>
+                        <p>it shows a greek God of mrdieval times trying to battle a minaotaur</p>
+                        </div>
+    
+                </div>
+                <div class="holder" data-scroll>
+            
+                        <img  class= "image" src="Resource\Goldenskull.jpg" alt="" >
+                        <div class="footer">
+                            <h1>Created by <i>Winnie Polite</i></h1>
+                        <p>the artists depicts the saying that <b>old is gold</b>
+                        by showing a skull and giving it golden texture with some legendary caving</p>
+                        </div>
+            
+    
+                </div>
+                <div class="holder" data-scroll>
+            
+                        <img  class= "image" src="Resource\AI.jpg" alt="">
+                        <div class="footer">
+                            <h1>Created by <i>Balozi Alfred</i></h1>
+                        <p>its a futuristic piece of art that shows next generation technology that uses AI</p>
+                        </div>
+
+
+    
+                </div>
+           
+    
+         </div>
+         <footer>
+            <h2>click the button below to join our group</h2>
+            <a href="signup.html"> <button class="button">sign up</button></a>
+            <a href="home.html">
+                <button class="button">back</button>
+               </a>
+        </footer>
+
+
+
+
+          </div>
+
+
+    <script src="scroll/scroll-out.min.js"></script>
+    <script>
+        ScrollOut({
+            threshold : .5
+        });
+    </script>
+    
+   
+</body>
+</html>

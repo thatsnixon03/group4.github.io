@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <body>
+        
+    <nav id="navbar"class="nav-bar">
+        <div class="logo"><h2>G4</h2></div>
+       <div class="nav-bar">
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="news.html">news</a></li>
+            <li><a href="signup.html">join us</a></li>
+        </ul>
+
+       </div>
+
+    </nav>
+    <!-- stickynavbar -->
+    <div class="body">
+        <section class="blury">
+            <div class="left">
+                <h1 data-scroll class="blur"> welcome to Group4</h1>
+                <p data-scroll>  Group4 is tech group that involves a cutting-edge coding techniques and innovative technology to create stunning and eye appealing UI/UX designs </p> 
+            <!-- <section > -->
+                <!-- <h1 data-scroll> hey there</h1> -->
+            </div>
+            <div class="right">
+                <p data-scroll>also we have various resources that can take your coding game to the next level E.G <b>coding tutorials , good mentordhip programs
+
+                </b> also with various companies that are highly ranked and most likely to influence</p> 
+            <!-- <section > -->
+               
+                <!-- <h1 data-scroll> hey there</h1> -->
+            </div>
+            
+         
+            <!-- <p  data-scroll>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, commodi.</p> -->
+        </section>
+
+        <section>
+            <h1 data-scroll class="tl"> GROUP4 <span style="color:grey;"> a fortress</span> for digital assets</h1>
+            <p  data-scroll  class="tl">   
+                Why it works;Very cretaive use of colors. patterns and shapes.Consistent styling of design elements through-out the whole tech website.The sticky call to action appears at the bottom of the page while  scrolling ,this adds to form and function
+            </p>
+                <p data-scroll  class="tl">  this great website has a unique, creative and playful transitiond and animations combined with high quality photography rounded style of shapes and fonts</p> 
+                <p data-scroll  class="tl">  we have organized content and scetions of the technology sites are focused on providing the capabiliities and features of their main product.custom graphics and high contrast</p> 
+        </section>
+    
+        <section class="blur">
+            <h1 data-scroll class="tl"> THE <span style="color: grey;"> GROUP4 </span>TEAM</h1>
+            
+             <ul>
+                <li data-scroll>RASHID MGENI(Group Leader)</li>
+               
+                <li  data-scroll>BARAKA ALFRED</li>
+                <li  data-scroll >BENJAMIN SENKORO</li>
+                <li data-scrolli>ABDALLAH MHONDONWA</li>
+                <li  data-scroll>MAXSON MICHEAL</li>
+                <li  data-scrolli>ELIUD ISAC</li>
+                <li  data-scroll>ABDILLAH IDRIS</li>
+                <li data-scroll>NIXON HENRY</li>
+                <li  data-scroll>EVANCE GUBIKA</li>
+                <li data-scroll>WINNIE AUGUSTINO</li>
+                <li data-scroll>FRANCIS KIMARO</li>
+                <li  data-scroll>HELLEN SANGA</li>
+                <li data-scroll>JOEL MACHA</li>
+               
+
+             </ul>
+             <div class="input">
+                <input  data-scroll type="text" name="" id="name" placeholder="  fill your  name please" style="font-family:'montserrat';"><br>
+                <p id="warn"></p>
+            
+                <button   data-scroll onclick="send()">done</button>
+             </div>
+                <script>
+                    function send() {
+                        let input=document.getElementById("name").value;
+                        localStorage.setItem("input",input);
+                        if(localStorage.getItem("input"))
+                        {
+                            window.location.href="page.html";
+                        }else{
+                            alert("fill in please");
+                        }
+                    }
+
+                </script>
+</section>
+
+    
+    </div>
+     
+        <script src="scroll/scroll-out.min.js"></script>
+        <script>
+            ScrollOut({
+                threshold : 0.5
+
+
+            }
+                            );
+        </script>
+        
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
